@@ -1,0 +1,2 @@
+This is a plain text sample.
+Hanzo extract should pass it through verbatim.
