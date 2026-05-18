@@ -1,0 +1,6 @@
+/extract
+/dist
+.DS_Store
+*.test
+*.out
+/coverage*
