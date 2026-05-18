@@ -16,6 +16,8 @@ import (
 
 	"github.com/hanzoai/extract-svc/pkg/auth"
 	"github.com/hanzoai/extract-svc/pkg/extract"
+
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 
 // MaxUploadBytes is the hard cap on POST bodies. 25 MB per the contract.
@@ -56,6 +58,9 @@ func New(cfg Config) *Server {
 	s.mux.HandleFunc("GET /v1/health", s.handleHealth)
 	s.mux.HandleFunc("POST /v1/extract", s.requireAuth(s.handleExtract))
 	s.mux.HandleFunc("POST /v1/extract/url", s.requireAuth(s.handleExtractURL))
+	// /v1/metrics is unauthed — scrapers (kube-prometheus, vmagent) hit
+	// it without credentials. Same convention as collab and team-go.
+	s.mux.Handle("GET /v1/metrics", promhttp.Handler())
 	return s
 }
 
