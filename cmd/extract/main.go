@@ -15,8 +15,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/hanzoai/extract/pkg/auth"
-	"github.com/hanzoai/extract/pkg/server"
+	"github.com/hanzoai/extract-svc/pkg/auth"
+	"github.com/hanzoai/extract-svc/pkg/server"
 )
 
 // Version is overridden via -ldflags="-X main.Version=v0.1.0" at build time.

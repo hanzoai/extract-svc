@@ -13,14 +13,14 @@ permissions:
 
 jobs:
   docker:
-    if: github.repository == 'hanzoai/extract'
+    if: github.repository == 'hanzoai/extract-svc'
     permissions:
       contents: read
       packages: write
       id-token: write
     uses: hanzoai/.github/.github/workflows/docker-build.yml@main
     with:
-      image: ghcr.io/hanzoai/extract
+      image: ghcr.io/hanzoai/extract-svc
       platforms: linux/amd64
       build-args: |
         COMMIT_HASH=${{ github.sha }}

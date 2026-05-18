@@ -1,4 +1,4 @@
-module github.com/hanzoai/extract
+module github.com/hanzoai/extract-svc
 
 go 1.26.2
 
