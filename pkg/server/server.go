@@ -14,8 +14,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hanzoai/extract/pkg/auth"
-	"github.com/hanzoai/extract/pkg/extract"
+	"github.com/hanzoai/extract-svc/pkg/auth"
+	"github.com/hanzoai/extract-svc/pkg/extract"
 )
 
 // MaxUploadBytes is the hard cap on POST bodies. 25 MB per the contract.
