@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/hero.svg" alt="extract-svc" width="880"></p>
+
 # extract
 
 Document text extraction service. Drop-in replacement for Huly's `rekoni`:
