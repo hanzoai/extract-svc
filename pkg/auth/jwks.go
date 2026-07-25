@@ -25,7 +25,7 @@ import (
 )
 
 const (
-	DefaultJWKSURL  = "https://hanzo.id/.well-known/jwks"
+	DefaultJWKSURL  = "https://hanzo.id/v1/iam/.well-known/jwks"
 	jwksCacheTTL    = 10 * time.Minute
 	httpFetchTimeout = 10 * time.Second
 )

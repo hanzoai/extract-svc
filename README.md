@@ -29,7 +29,7 @@ Format detection is by magic bytes, not filename. Filenames are advisory only.
 
 All routes are under `/v1/`. Auth is required on extraction endpoints: bearer
 JWT issued by Hanzo IAM, verified against the IAM JWKS (`IAM_JWKS_URL`,
-default `https://hanzo.id/.well-known/jwks`). RS256 and RS512 are accepted;
+default `https://hanzo.id/v1/iam/.well-known/jwks`). RS256 and RS512 are accepted;
 HS* and `none` are rejected.
 
 ### `GET /v1/health`
@@ -92,7 +92,7 @@ All error responses are `{"error":"..."}` JSON.
 | Env | Default |
 | --- | --- |
 | `LISTEN_ADDR` | `:4004` |
-| `IAM_JWKS_URL` | `https://hanzo.id/.well-known/jwks` |
+| `IAM_JWKS_URL` | `https://hanzo.id/v1/iam/.well-known/jwks` |
 
 ## Build & run
 
@@ -117,7 +117,7 @@ containers:
   ports: [{containerPort: 4004}]
   env:
     - name: IAM_JWKS_URL
-      value: https://hanzo.id/.well-known/jwks
+      value: https://hanzo.id/v1/iam/.well-known/jwks
   readinessProbe:
     httpGet: { path: /v1/health, port: 4004 }
   resources:
