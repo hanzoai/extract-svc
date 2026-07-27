@@ -1,6 +1,6 @@
 module github.com/hanzoai/extract-svc
 
-go 1.26.4
+go 1.26.5
 
 require (
 	github.com/ledongthuc/pdf v0.0.0-20250511090121-5959a4027728
