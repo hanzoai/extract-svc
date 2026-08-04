@@ -131,3 +131,5 @@ containers:
 - No CGo, no shelled binaries. Distroless static base.
 - Tests build OOXML and PDF fixtures at runtime — see `pkg/extract/fixtures_test.go`.
 - Image OCR will land in a later version; v0.1 returns HTTP 415 with a clear message.
+
+Licensed under **MIT OR Apache-2.0**, per [HIP-0137](https://github.com/hanzoai/hips/blob/main/HIPs/hip-0137-one-license.md).
