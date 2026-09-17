@@ -1,6 +1,6 @@
 # Stage 1 — static go build. No CGo, no Node, no Python — every
 # format extractor is pure Go.
-FROM golang:1.26.5-alpine AS build
+FROM golang:1.27.1-alpine AS build
 
 RUN apk add --no-cache ca-certificates tzdata
 RUN addgroup -g 65532 -S nonroot && adduser -u 65532 -S nonroot -G nonroot

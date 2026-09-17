@@ -255,10 +255,3 @@ func guessLanguage(s string) string {
 	}
 	return "und"
 }
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
