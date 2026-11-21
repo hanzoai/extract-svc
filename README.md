@@ -2,6 +2,8 @@
 
 # extract
 
+[![Open in Hanzo](https://hanzo.app/badges/open-in-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/hanzoai/extract-svc&ref=main&action=open) [![Edit with Hanzo](https://hanzo.app/badges/edit-with-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/hanzoai/extract-svc&ref=main&action=edit) [![Deploy with Hanzo](https://hanzo.app/badges/deploy-with-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/hanzoai/extract-svc&ref=main&action=deploy)
+
 Document text extraction service. Drop-in replacement for Huly's `rekoni`:
 takes a file (or URL), returns the plain text plus light metadata. Pure
 Go, distroless, IAM-authenticated, no Python sidecars.
